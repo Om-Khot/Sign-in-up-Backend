@@ -1,6 +1,6 @@
 import express from 'express';
 import connectDB from './Config/dbConfig.js';
-import { FRONTEND_URL, PORT } from './Config/serverConfig.js';
+import { PORT } from './Config/serverConfig.js';
 import SignInRoute from './Routes/signRoute.js';
 import SignUpRouter from './Routes/signUpRoute.js';
 import cookieParser from 'cookie-parser';
