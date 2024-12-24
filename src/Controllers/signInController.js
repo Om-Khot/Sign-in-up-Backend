@@ -7,7 +7,6 @@ async function signIn(req,res){
         res.cookie('authToken' , response.token, {
             httpOnly : true,
             secure : true,
-            domain : FRONTEND_URL,
             maxAge : 1000 * 60 * 60 * 24 * 7 // 1 week
         });
 
