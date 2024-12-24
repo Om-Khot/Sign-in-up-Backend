@@ -10,7 +10,7 @@ import cors from 'cors';
 const app = express();
 
 app.use(cors({
-    origin : FRONTEND_URL, // allow server to accept the request from differnt origin
+    origin : 'https://sign-in-up-gzmg.vercel.app', // allow server to accept the request from differnt origin
     credentials: true, //allow session cookie from browser to pass through
 }))
 

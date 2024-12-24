@@ -1,4 +1,3 @@
-import { FRONTEND_URL } from "../Config/serverConfig.js";
 import signInServ from "../Services/signInserv.js";
 
 async function signIn(req,res){
