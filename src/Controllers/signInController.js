@@ -1,3 +1,4 @@
+import { FRONTEND_URL } from "../Config/serverConfig.js";
 import signInServ from "../Services/signInserv.js";
 
 async function signIn(req,res){
@@ -5,6 +6,8 @@ async function signIn(req,res){
         const response = await signInServ(req.body);
         res.cookie('authToken' , response.token, {
             httpOnly : true,
+            secure : true,
+            // domain : FRONTEND_URL,
             maxAge : 1000 * 60 * 60 * 24 * 7 // 1 week
         });
 

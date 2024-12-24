@@ -28,12 +28,8 @@ async function signInServ(authDetails){
         expiresIn: JWT_EXPIRY
     });
 
-    return {token, userData: {
-        email : user.email,
-        firstName : user.firstName,
-        lastName : user.lastName,
-        id : user._id
-    }}
+    console.log("Token is",token);
+    return token;
 };
 
 export default signInServ;
